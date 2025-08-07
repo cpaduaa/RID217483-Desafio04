@@ -68,6 +68,12 @@ function Projects() {
             display: flex;
             align-items: center;
             gap: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #e0e0e0; /* linha fininha cinza clara */
+          }
+          .project-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
           }
           .project-image {
             width: 160px;
