@@ -1,17 +1,36 @@
+import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from 'react-icons/fa';
+
 function Contato() {
   return (
     <section style={styles.section}>
-      <h2 style={styles.heading}>Entre em contato</h2>
-      <p style={styles.text}>
-        Se você deseja conversar sobre projetos, colaborações ou apenas dizer olá, estou disponível!
-      </p>
+      <h1 style={styles.title}>Contato</h1>
 
-      <div style={styles.card}>
-        <p style={styles.label}>Telefone:</p>
-        <p style={styles.value}>+44 7519 913259</p>
+      <div style={styles.contactContainer}>
+        <a
+          href="https://github.com/cpaduaa"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={styles.link}
+        >
+          <FaGithub style={styles.icon} /> github.com/cpaduaa
+        </a>
 
-        <p style={styles.label}>E-mail:</p>
-        <p style={styles.value}>cris.padua.96@gmail.com</p>
+        <a
+          href="https://www.linkedin.com/in/cristiane-p%C3%A1dua-alves-1044b7186/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={styles.link}
+        >
+          <FaLinkedin style={styles.icon} /> Cristiane Pádua
+        </a>
+
+        <a href="mailto:cris.padua.96@gmail.com" style={styles.link}>
+          <FaEnvelope style={styles.icon} /> cris.padua.96@gmail.com
+        </a>
+
+        <a href="tel:+5531987654321" style={styles.link}>
+          <FaPhone style={styles.icon} /> (+44) 07519913258
+        </a>
       </div>
     </section>
   );
@@ -19,50 +38,38 @@ function Contato() {
 
 const styles = {
   section: {
-    padding: '3rem 1rem',
-    backgroundColor: '#f8f8f8',
+    padding: '5rem 2rem',
     textAlign: 'center' as const,
-    width: '100%',
-    boxSizing: 'border-box' as const,
+    backgroundColor: '#ffffff',
+    minHeight: '80vh',
   },
-  heading: {
+  title: {
     fontSize: '2.5rem',
-    marginBottom: '1rem',
+    marginBottom: '2rem',
+    color: '#1a1a1a',
+  },
+  contactContainer: {
+    display: 'flex',
+    flexDirection: 'column' as const,
+    gap: '1.5rem',
+    alignItems: 'center',
+  },
+  link: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '0.8rem',
+    fontSize: '1.1rem',
+    textDecoration: 'none',
     color: '#333',
+    transition: 'color 0.3s',
   },
-  text: {
-    fontSize: '1.2rem',
-    color: '#555',
-    maxWidth: '700px',
-    margin: '0 auto 2rem auto',
-    padding: '0 1rem',
-  },
-  card: {
-    backgroundColor: '#fff',
-    padding: '2rem',
-    borderRadius: '12px',
-    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
-    display: 'inline-block',
-    marginTop: '1rem',
-    minWidth: '300px',
-    maxWidth: '90%',
-    boxSizing: 'border-box' as const,
-  },
-  label: {
-    fontSize: '1rem',
-    color: '#888',
-    marginTop: '1rem',
-    marginBottom: '0.3rem',
-  },
-  value: {
-    fontSize: '1.4rem',
-    fontWeight: 'bold' as const,
-    color: '#222',
-    margin: 0,
-    wordWrap: 'break-word' as const,
+  icon: {
+    fontSize: '1.3rem',
   },
 };
 
 export default Contato;
+
+
 
 

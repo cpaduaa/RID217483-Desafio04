@@ -1,7 +1,6 @@
-import Hero from '../components/Hero';
-import Blog from '../components/Blog';
-import Projects from '../components/Projects';
-import Contato from '../components/Contato';
+import Hero from './Hero';
+import Blog from './Blog';
+import Projects from './Projects';
 
 function Home() {
   return (
@@ -16,10 +15,6 @@ function Home() {
 
       <section id="projetos">
         <Projects />
-      </section>
-
-      <section id="contato">
-        <Contato />
       </section>
     </main>
   );

@@ -3,8 +3,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 function Footer() {
   return (
     <footer style={styles.footer}>
-      <p style={styles.text}>© 2025 Cristiane Pádua Alves</p>
-      <div style={styles.icons}>
+      <div style={styles.iconContainer}>
         <a
           href="https://github.com/cpaduaa"
           target="_blank"
@@ -25,37 +24,38 @@ function Footer() {
           <FaEnvelope size={24} />
         </a>
       </div>
+
+      <p style={styles.text}>Copyright ©2030 All rights reserved</p>
     </footer>
   );
 }
 
 const styles = {
   footer: {
-    padding: '2rem',
-    backgroundColor: '#222',
-    color: '#fff',
+    marginTop: '4rem',
+    padding: '2rem 1rem',
+    backgroundColor: '#ffffff',
+    borderTop: '1px solid #e0e0e0',
     textAlign: 'center' as const,
-    width: '100vw',
   },
-
-  text: {
-    marginBottom: '1rem',
-  },
-
-  icons: {
+  iconContainer: {
     display: 'flex',
     justifyContent: 'center',
     gap: '1.5rem',
-    flexWrap: 'wrap' as const,
+    marginBottom: '1rem',
   },
-
   iconLink: {
-    color: '#fff',
+    color: '#1a1a1a',
+    transition: 'color 0.3s ease',
     textDecoration: 'none',
-    transition: 'color 0.3s',
+  },
+  text: {
+    color: '#666',
+    fontSize: '0.9rem',
   },
 };
 
 export default Footer;
+
 
 
