@@ -10,8 +10,7 @@ function Hero() {
         </h1>
 
         <p className="hero-subtitle">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
-          Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+          Desenvolvedora Front-End apaixonada por criar interfaces intuitivas, acessíveis e responsivas. Tenho experiência com HTML, CSS, JavaScript e frameworks modernos como React. Busco constantemente melhorar a experiência do usuário através de código limpo e boas práticas de desenvolvimento.
         </p>
 
         <a href="/curriculo.pdf" download className="hero-button">
