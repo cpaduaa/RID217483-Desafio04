@@ -13,7 +13,9 @@ function Header() {
   return (
     <header style={styles.header}>
       <div style={styles.container}>
-        <div style={styles.logo}>Portfolio</div>
+        <Link to="/" style={styles.logo}>
+          Portfolio
+        </Link>
         <nav style={styles.nav}>
           <a
             href="#blog"
@@ -68,6 +70,7 @@ const styles = {
     fontSize: '1.3rem',
     fontWeight: 600,
     color: '#1a1a1a',
+    textDecoration: 'none',
   },
   nav: {
     display: 'flex',
@@ -87,3 +90,4 @@ const styles = {
 };
 
 export default Header;
+
