@@ -13,7 +13,7 @@ function Blog() {
           </div>
           <div className="blog-card">
             <h3 className="blog-post-title">Aprendizados com HTML, CSS e JavaScript</h3>
-            <p className="blog-meta">01 Ago 2025 • Estudos, Front‑end</p>
+            <p className="blog-meta">01 Ago 2025 • Estudos, Front-end</p>
             <p className="blog-text">
               Desde que iniciei meus estudos em Engenharia de Software, venho me dedicando a compreender todos os fundamentos que compõem essa área, tanto no front-end quanto no back-end. Estou focada em absorver cada conteúdo que me é ensinado, me aprofundando nos conceitos e buscando aplicá-los na prática de forma sólida e consistente. Até o momento, já estudei HTML, CSS e JavaScript, que têm sido a base para meus primeiros projetos. Com essas tecnologias, aprendi sobre estrutura semântica, responsividade, estilização com CSS, lógica de programação, manipulação do DOM, eventos, funções e controle de fluxo. Tenho praticado esses conhecimentos na construção do meu portfólio e em desafios propostos ao longo do curso. Além disso, venho iniciando meus estudos com React e TypeScript, o que tem ampliado minha visão sobre o desenvolvimento de interfaces mais dinâmicas e modernas. Mesmo ainda em processo de formação, estou cada vez mais motivada com tudo que estou aprendendo. Essa transição de carreira tem sido uma jornada de descoberta e crescimento, e sigo com entusiasmo e dedicação para evoluir como futura profissional da tecnologia.
             </p>
